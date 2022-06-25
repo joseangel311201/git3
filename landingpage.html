@@ -47,6 +47,26 @@
     form {
         position: absolute;
     }
+    
+    .css-button-sharp--grey {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border: 2px solid #495057;
+        background-color: rgba(192, 181, 181, 0.952);
+    }
+    
+    .css-button-sharp--grey:hover {
+        background: #fff;
+        color: #010202
+    }
 </style>
 
 <body>
@@ -69,12 +89,13 @@
     </h1>
     <form action="">
         <table>
-            <tr>
-                <P>
-                    <td>
-                        <LABEL for="nombre">Tratamiento: </LABEL>
-                    </td>
-                    <td><select name="tratamiento" style="width: 8cm; height: .8cm">
+
+            <P>
+                <td>
+                    <LABEL for="nombre">Tratamiento: </LABEL>
+                </td>
+                <td>
+                    <select name="tratamiento" style="width: 8cm; height: .8cm">
 
                     <option></option>
                     
@@ -83,52 +104,86 @@
                     <option></option>
                     
                     </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        <LABEL for="nombre">Nombre</LABEL>
+                    </td>
+                    <td>
+                        <INPUT type="text " placeholder="Escribe tu nombre " id="nombre ">
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <LABEL for="email ">Apellidos</LABEL>
+                    </td>
+                    <td>
+                        <INPUT type="text " placeholder="escribe tus apellidos " id="email ">
+                    </td>
                     <BR>
-            </tr>
-            <tr>
-                <td>
-                    <LABEL for="nombre">Nombre </LABEL>
-                </td>
-                <td>
-                    <INPUT type="text" placeholder="Escribe tu nombre" id="nombre">
-                </td>
-                <BR>
-            </tr>
-            <tr>
+                </tr>
+                <tr>
+                    <td>
+                        <LABEL for="nacimiento ">fecha de Nacimiento</LABEL>
+                    </td>
+                    <td>
+                        <INPUT type="date " id="nacimiento ">
+                    </td>
+                    <BR>
+                </tr>
+                <tr>
+                    <td>
+                        <LABEL for="email ">Email</LABEL>
+                    </td>
+                    <td>
+                        <INPUT type="email " placeholder="Escribe tu email " id="email ">
+                    </td>
+                    <BR>
+                </tr>
+                <tr>
+                    <td>
+                        <LABEL for="confirmacionEmail ">confirma tu Email</LABEL>
+                    </td>
+                    <td>
+                        <INPUT type="email " placeholder="Confirma tu email " id="confirmacionEmail ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <LABEL for="acceso ">clave de acceso</LABEL>
+                    </td>
+                    <td>
+                        <INPUT type="email " placeholder="Clave de acceso " id="claveAcceso ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <LABEL for="confirmacionacceso ">clave de acceso</LABEL>
+                    </td>
+                    <td>
+                        <INPUT type="email " placeholder="Confirmacion de clave de acceso " id="confirmacionacceso ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <LABEL for="pais ">Pais/Idioma</LABEL>
+                    </td>
 
-                <td>
-                    <LABEL for="email">Apellidos</LABEL>
-                </td>
-                <td>
-                    <INPUT type="text" placeholder="escribe tus apellidos" id="email">
-                </td>
-                <BR>
-            </tr>
-            <tr>
-                <td>
-                    <LABEL for="nacimiento">fecha de Nacimiento</LABEL>
-                </td>
-                <td>
-                    <INPUT type="date" id="nacimiento">
-                </td>
-                <BR>
-            </tr>
-            <tr>
-                <td>
-                    <LABEL for="email">Email</LABEL>
-                </td>
-                <td>
-                    <INPUT type="email" placeholder="Escribe tu email" id="email">
-                </td>
-                <BR>
-            </tr>
-            <!-- <INPUT type="date" name="nacimiento" value="Varón"> Varón
-            <BR>
-            <INPUT type="radio" name="sexo" value="Mujer"> Mujer
-            <BR>
-            <INPUT type="submit" value="Enviar">
-            <INPUT type="reset"> -->
+                    <td><select name="Idioma" style="width: 8cm; height: .8cm">
 
+                            <option>español</option>
+                            
+                            <option></option>
+                            
+                            <option></option>
+                            
+                            </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"><a href="landingpage.html"><button class="css-button-sharp--grey">botón</button></a></td>
+                </tr>
         </table>
         </P>
     </form>
