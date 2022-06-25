@@ -38,6 +38,15 @@
         background-color: rgb(12, 11, 11);
         color: rgb(226, 218, 218);
     }
+    
+    label {
+        font-size: .8cm;
+        margin: 2ch;
+    }
+    
+    form {
+        position: absolute;
+    }
 </style>
 
 <body>
@@ -59,7 +68,60 @@
     <h1>Tus datos personales
     </h1>
     <form action="">
+        <table>
+            <tr>
+                <P>
+                    <td>
+                        <LABEL for="nombre">Tratamiento: </LABEL>
+                    </td>
+                    <td><select name="" style="width: 8cm; height: .8cm">
 
+                    <option></option>
+                    
+                    <option></option>
+                    
+                    <option></option>
+                    
+                    </select></td>
+                    <BR>
+            </tr>
+            <tr>
+                <td>
+                    <LABEL for="nombre">Nombre </LABEL>
+                </td>
+                <td>
+                    <INPUT type="text" id="apellido">
+                </td>
+                <BR>
+            </tr>
+            <tr>
+
+                <td>
+                    <LABEL for="email">Apellidos</LABEL>
+                </td>
+                <td>
+                    <INPUT type="text" id="email">
+                </td>
+                <BR>
+            </tr>
+            <tr>
+                <td>
+                    <LABEL for="email">fecha de Nacimiento</LABEL>
+                </td>
+                <td>
+                    <INPUT type="date" id="nacimiento">
+                </td>
+                <BR>
+            </tr>
+            <!-- <INPUT type="date" name="nacimiento" value="Varón"> Varón
+            <BR>
+            <INPUT type="radio" name="sexo" value="Mujer"> Mujer
+            <BR>
+            <INPUT type="submit" value="Enviar">
+            <INPUT type="reset"> -->
+
+        </table>
+        </P>
     </form>
 </body>
 
